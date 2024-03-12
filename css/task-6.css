@@ -1,0 +1,89 @@
+#controls {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background: #f6f6fe;
+  margin-bottom: 16px;
+}
+
+input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 0px;
+  width: 150px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+}
+
+input:hover,
+input:focus {
+  border: 1px solid #000;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button[data-create] {
+  background: #4e75ff;
+}
+button[data-create]:hover,
+button[data-create]:focus {
+  background: #6c8cff;
+}
+
+button[data-destroy] {
+  background: #ff4e4e;
+}
+
+button[data-destroy]:hover,
+button[data-destroy]:focus {
+  background: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  padding: 32px;
+  min-width: 486px;
+  width: auto;
+  height: auto;
+  gap: 16px;
+  background: #f6f6fe;
+}
+#boxes > div {
+  width: 30px;
+  height: 30px;
+}
