@@ -103,9 +103,10 @@ galleryLinks.forEach(link => {  // Метод forEach використовуєт
 // Додаємо обробник подій для кліка на ul елементі
 galleryContainer.addEventListener('click', function(event) {
     // Перевіряємо, чи було клікнуто на елемент галереї (елемент з класом "gallery-link")
-    if (event.target.classList.contains('.gallery-link')) {
+    if (event.target.classList.contains("gallery-link")) {
         // Отримуємо посилання на велике зображення з дата-атрибуту data-source
-        const largeImageSrc = event.target.dataset.sourse;
+      const largeImageSrc = event.target.dataset.sourse;
+      console.log(largeImageSrc);
         
         // Робимо потрібні дії з посиланням на велике зображення
         console.log('Посилання на велике зображення:', largeImageSrc);
