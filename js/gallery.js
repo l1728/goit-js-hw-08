@@ -93,7 +93,7 @@ function onImageClick(event) {
     // Створюємо модальне вікно з великим зображенням
     // Підключаємо бібліотеку basicLightbox
     const instance = basicLightbox.create(` 
-    <img src="${largeImageSrc}" width="1112" height="640">
+    <img  id="largeImage" src="${largeImageSrc}">
 `)
 // Показуємо модальне вікно
 instance.show();

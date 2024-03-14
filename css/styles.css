@@ -5,13 +5,14 @@
 .gallery {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  width: 1140px;
-  height: auto;
+  width: 1128px;
+  height: 648;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -26,4 +27,8 @@
 .gallery-item {
   width: 360px;
   height: 200px;
+}
+#largeImage {
+  max-width: 1112px;
+  height: 640px;
 }
