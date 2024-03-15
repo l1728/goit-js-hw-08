@@ -87,13 +87,13 @@ function onImageClick(event) {
   event.preventDefault(); // Заборона стандартної поведінки
   const galleryItem = event.target.closest(".gallery-item"); // Знаходимо найближчий елемент з класом ".gallery-item"
   if (galleryItem) { // Перевіряємо, чи було клікнуто на елемент галереї (елемент з класом "gallery-item")
-     const largeImageSrc = galleryItem.querySelector(".gallery-image").dataset.source; // Отримуємо посилання на велике зображення з дата-атрибуту data-source
-    console.log('Посилання на велике зображення:', largeImageSrc); // Робимо потрібні дії з посиланням на велике зображення
+     const largeImageSrc = event.target.dataset.source; // Отримуємо посилання на велике зображення з дата-атрибуту data-source
+   // console.log('Посилання на велике зображення:', largeImageSrc); // Робимо потрібні дії з посиланням на велике зображення
   
     // Створюємо модальне вікно з великим зображенням
     // Підключаємо бібліотеку basicLightbox
     const instance = basicLightbox.create(` 
-    <img  id="largeImage" src="${largeImageSrc}">
+    <img src="${largeImageSrc}" width="1112" height="640">
 `)
 // Показуємо модальне вікно
 instance.show();
